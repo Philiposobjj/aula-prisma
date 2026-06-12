@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Marca {
+  id              Int      @id @default(autoincrement())
+  nome            String
+  anoModelo       Int
+  anoFabricacao   Int
+  dataCadastro    DateTime @default(now())
+  dataAtualizacao DateTime @updatedAt
+  ativo           Boolean  @default(true)
+
+  @@map("marcas")
+}

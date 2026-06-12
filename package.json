@@ -1,0 +1,28 @@
+{
+"name": "aula_prisma",
+"version": "1.0.0",
+"description": "Projeto Prisma com MySQL e TypeScript",
+"type": "module",
+"main": "src/index.ts",
+"scripts": {
+"dev": "tsx src/index.ts",
+"start": "tsx src/index.ts",
+"generate": "prisma generate",
+"migrate": "prisma migrate dev",
+"studio": "prisma studio",
+"validate": "prisma validate"
+},
+"keywords": [],
+"author": "",
+"license": "ISC",
+"dependencies": {
+"@prisma/client": "^6.16.2",
+"dotenv": "^17.2.1"
+},
+"devDependencies": {
+"@types/node": "^24.3.0",
+"prisma": "^6.16.2",
+"tsx": "^4.20.5",
+"typescript": "^5.9.2"
+}
+}
